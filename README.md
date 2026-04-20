@@ -2,7 +2,7 @@
 
 A premium, modern editorial-style web interface for **Focal Driving Academy**, built with Next.js, TypeScript, and Tailwind CSS.
 
-![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![Project Status](/screenshot.png)
 ![Tech Stack](https://img.shields.io/badge/stack-Next.js%20|%20TypeScript%20|%20Tailwind-blue.svg)
 
 ---
