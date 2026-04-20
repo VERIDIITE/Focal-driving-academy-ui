@@ -9,7 +9,7 @@ interface PageHeaderProps {
   breadcrumbs?: { label: string; href: string }[];
 }
 
-export const PageHeader = ({ title, subtitle, breadcrumbs }: PageHeaderProps) => {
+export const PageHeader = ({ title, subtitle, badge, breadcrumbs }: PageHeaderProps) => {
   return (
     <header className="relative pt-32 pb-12 md:pt-64 md:pb-40 overflow-hidden bg-white">
       {/* Background Large Text - Editorial Watermark */}
@@ -18,17 +18,21 @@ export const PageHeader = ({ title, subtitle, breadcrumbs }: PageHeaderProps) =>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {breadcrumbs && (
-          <nav className="flex items-center gap-3 mb-8 md:mb-10 text-[9px] uppercase tracking-[0.4em] font-black text-black/30">
-            <Link href="/" className="hover:text-red transition-all duration-300">Experience</Link>
-            {breadcrumbs.map((crumb, i) => (
-              <React.Fragment key={i}>
-                <span className="text-red/40 select-none">/</span>
-                <Link href={crumb.href} className="hover:text-red transition-all duration-300">{crumb.label}</Link>
-              </React.Fragment>
-            ))}
-          </nav>
-        )}
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-12">
+          {breadcrumbs && (
+            <nav className="flex items-center gap-3 text-[9px] uppercase tracking-[0.4em] font-black text-black/30">
+              <Link href="/" className="hover:text-red transition-all duration-300">Experience</Link>
+              {breadcrumbs.map((crumb, i) => (
+                <React.Fragment key={i}>
+                  <span className="text-red/40 select-none">/</span>
+                  <Link href={crumb.href} className="hover:text-red transition-all duration-300">{crumb.label}</Link>
+                </React.Fragment>
+              ))}
+            </nav>
+          )}
+
+          {badge && <Badge variant="primary">{badge}</Badge>}
+        </div>
         
         <div className="max-w-5xl">
            <h1 className="text-5xl md:text-[150px] font-black text-black uppercase leading-[0.9] md:leading-[0.8] tracking-tighter mb-8 md:mb-10 drop-shadow-sm">
