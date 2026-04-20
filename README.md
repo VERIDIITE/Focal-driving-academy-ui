@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Focal Driving Academy UI
 
-## Getting Started
+A premium, modern editorial-style web interface for **Focal Driving Academy**, built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![Tech Stack](https://img.shields.io/badge/stack-Next.js%20|%20TypeScript%20|%20Tailwind-blue.svg)
 
+---
+
+## 🏁 Overview
+
+Focal Driving Academy is a Leicester-based driving school with a legacy of excellence. This project transforms its digital presence from a generic template into a high-end, conversion-focused brand identity. The design prioritizes **legacy, expertise, and local presence** with a bold Red/Black/White "Modern Editorial" aesthetic.
+
+## ✨ Key Features
+
+- **🎯 Modern Editorial Aesthetic**: High-impact typography and sporty visual elements reflecting precision and speed.
+- **📱 Responsive by Design**: Seamlessly optimized experience across mobile, tablet, and desktop devices.
+- **🎓 Instructor Training Hub**: Detailed pathways for aspiring driving instructors.
+- **🛡️ Safety First**: Dedicated COVID-19 response and safety protocol documentation.
+- **💎 Premium Components**: Custom-built, reusable UI components including high-end navigation and hero headers.
+- **📈 Conversion Focused**: Strategic CTAs and layout flow designed to turn visitors into students.
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Runtime**: [React 19](https://reactjs.org/)
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/VERIDIITE/focal-driving-academy-ui.git
+cd focal-driving-academy-ui
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the development server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Project Structure
 
-## Learn More
+- `app/` - Next.js App Router pages and global layouts.
+- `components/` - Reusable UI building blocks (Navbar, Buttons, Headers).
+- `public/` - Official assets, including the brand logo.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with precision for **Focal Driving Academy**.
